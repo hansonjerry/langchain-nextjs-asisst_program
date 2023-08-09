@@ -1,5 +1,3 @@
-"use client";
-
 import { ChatWindow } from "@/components/ChatWindow";
 
 export default function AgentsPage() {
@@ -49,7 +47,7 @@ export default function AgentsPage() {
           🦜
           <span className="ml-2">
             By default, the agent is pretending to be a talking parrot, but you
-            can change this to whatever you want!
+            can the prompt to whatever you want!
           </span>
         </li>
         <li className="text-l">
@@ -69,7 +67,7 @@ export default function AgentsPage() {
     <ChatWindow
       endpoint="api/chat/agents"
       emptyStateComponent={InfoCard}
-      placeholder="Squawk! I'm an agent! Ask me about the current weather in Honolulu!"
+      placeholder="Squawk! I'm a conversational agent! Ask me about the current weather in Honolulu!"
       titleText="🦜 Polly the Agentic Parrot"
     ></ChatWindow>
   );
